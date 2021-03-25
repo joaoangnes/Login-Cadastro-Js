@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Biblioteca do sweet alert 2 -->
+    <script src="js/sweetalert.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="icon" type="imagem/png" href="img/alvo.png" />
+    
+    <title>Página Cadastro</title>
+</head>
+<body>
+  
+    <div class="container">
+        <div class="title">Cadastro</div>
+        <div class="content">
+          
+        <form action="#" id="formCadastro">
+            
+            <div class="user-details">
+              
+                <div class="input-box">
+                    <span class="details">Nome</span>
+                    <input type="text" placeholder="Insira seu nome" id="nome"  data-required> 
+                </div>
+                
+                <div class="input-box">
+                    <span class="details">Cpf</span>
+                    <input type="text" placeholder="Insira seu cpf" id="cpf" data-cpf-validate ="14"  data-required>
+                </div>
+              
+                <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="Insira seu email" id="email" data-email-validate data-required>
+                </div>
+                
+                <div class="input-box">
+                        <span class="details">Telefone Celular</span>
+                        <input type="text" placeholder="Insira seu numero" id="fone" data-required data-fone-validate="14">
+                </div>
+                
+                <div class="input-box">
+                        <span class="details">Senha</span>
+                        <input type="text" placeholder="Insira sua senha" name="senha" id="senha" data-required data-password-validate>
+                </div>
+                
+                <div class="input-box">
+                        <span class="details">Confirma sua Senha</span>
+                        <input type="text" placeholder="Confirma sua senha" id="senhaConfirma" data-equal="senha" data-required>
+                </div>
+            
+            </div>
+            
+            <div class="button">
+                <input type="button" value="Cadastrar" id="botaoCadastrar">
+            </div> 
+        
+            <span class="details"> <a href="login.html"> Já possui uma conta?</a></span>
+            <span class="details"> <a href="index.html"> Página Inicial </a></span>
+          </form>
+          <p class="error-validation template"></p>
+        </div>
+      </div>
+      <script src="js/cadastro.js" type="module">  </script>
+  </body>
+</html>

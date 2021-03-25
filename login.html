@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Biblioteca do sweet alert 2 -->
+    <script src="js/sweetalert.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="icon" type="imagem/png" href="img/alvo.png" />
+    <title>Página Login</title>
+</head>
+<body>
+    <form action="#" id="login-form">
+      <h1>Login</h1>
+      
+      <div class="textb">
+        <input type="text" id="emailLogin">
+        <div class="placeholder"  >Email:</div>
+      </div>
+  
+      <div class="textb">
+        <input type="password" id="senhaLogin">
+        <div class="placeholder">Senha:</div>
+        <div class="show-password fas fa-eye-slash"></div>
+      </div>
+  
+      <div class="checkbox">
+        <input type="checkbox">
+        <div class="fas fa-check"></div>
+        Manter conectado
+      </div>
+  
+      <button class="btn fas fa-arrow-right"  id="btnLogin" disabled></button>
+      
+      <a href="cadastro.html">Crie sua conta</a>
+      <a href="index.html">Página Inicial</a>
+    
+    </form>
+
+    <p class="error-validation template"></p>
+    <script src="js/login.js"  type="module"> </script>
+  
+  </body>
+</html>
